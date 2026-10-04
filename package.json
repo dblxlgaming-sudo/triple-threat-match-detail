@@ -1,0 +1,1 @@
+{"name":"triple-threat-match-detail","private":true,"type":"module","scripts":{"test":"node --test tests/*.test.mjs","fixture-server":"node tests/fixture-server.mjs"}}
