@@ -1,5 +1,5 @@
 import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';import os from 'node:os';import path from 'node:path';
-import {ACTIVE_PATH,COMPONENTS,acquireLock,assertAllowedChanges,assertNotOlder,gitSafety,intendedPaths,isIdempotent,needsPush,pollLive,pushArgs,sha256,validateArtifact,validateCandidate,validatePointer} from '../scripts/match-details-publisher-lib.mjs';
+import {ACTIVE_PATH,COMPONENTS,acquireLock,assertAllowedChanges,assertNotOlder,gitSafety,intendedPaths,isIdempotent,needsPush,pollLive,pushArgs,sha256,validateArtifact,validateCandidate,validatePointer,validateUncommittedRecovery} from '../scripts/match-details-publisher-lib.mjs';
 const side=(p,o,s=60)=>({Player:p,Opponent:o,MatchupScore:s,MatchupScoreStatus:'SCORED',Components:Object.fromEntries(COMPONENTS.map(k=>[k,{Score:50,Available:'Yes'}]))});
 const match={MatchID:'A_B_1001',BoardDate:'2026-10-01',PlayerA:'A',PlayerB:'B',PlayerAMatchup:side('A','B'),PlayerBMatchup:side('B','A'),ModelRead:{ModelWinProbability:.6},CounterEvidence:{Status:'UNAVAILABLE',Reason:'NO_AUTHORITATIVE_MATCHUP_COUNTER_EVIDENCE_FIELD',Evidence:[]}};
 const artifact={ContractVersion:'tennis-match-details-v1',Sport:'Tennis',BoardDate:'2026-10-01',GeneratedAt:'2026-10-01T00:00:00Z',MatchCount:1,Matches:[match]};
@@ -27,6 +27,9 @@ test('idempotent same release and SHA',()=>assert.equal(isIdempotent(pointer,str
 test('idempotent current HEAD does not push unnecessarily',()=>assert.equal(needsPush(0),false));
 test('failed-push recovery retries when local HEAD is ahead',()=>assert.equal(needsPush(1),true));
 test('safe push-failure recovery retains exact intended paths',()=>assert.deepEqual(intendedPaths(pointer),[ACTIVE_PATH,'data/match-details/releases/2026-10-01-test/TripleThreat_Tennis_V2_Match_Details.json']));
+test('exact uncommitted publication is recoverable',()=>assert.equal(validateUncommittedRecovery({changes:intendedPaths(pointer),pointer,pointerBytes,artifactBytes:bytes,diskPointerBytes:pointerBytes,diskArtifactBytes:bytes}),true));
+test('uncommitted recovery rejects unrelated paths',()=>assert.throws(()=>validateUncommittedRecovery({changes:[...intendedPaths(pointer),'app.js'],pointer,pointerBytes,artifactBytes:bytes,diskPointerBytes:pointerBytes,diskArtifactBytes:bytes}),/Unrelated/));
+test('uncommitted recovery rejects changed release bytes',()=>assert.throws(()=>validateUncommittedRecovery({changes:intendedPaths(pointer),pointer,pointerBytes,artifactBytes:bytes,diskPointerBytes:pointerBytes,diskArtifactBytes:Buffer.from('wrong')}),/bytes mismatch/));
 test('Pages timeout reports failure',async()=>await assert.rejects(()=>pollLive({baseUrl:'https://invalid.test',pointer,timeoutMs:5,pollMs:1,fetchImpl:async()=>({ok:false,status:404})}),/timeout/));
 test('live pointer mismatch reports failure',async()=>await assert.rejects(()=>pollLive({baseUrl:'https://x',pointer,timeoutMs:5,pollMs:1,fetchImpl:async()=>({ok:true,arrayBuffer:async()=>Buffer.from(JSON.stringify({...pointer,Release:'other'}))})}),/timeout/));
 test('live artifact hash mismatch reports failure',async()=>{let count=0;await assert.rejects(()=>pollLive({baseUrl:'https://x',pointer,timeoutMs:5,pollMs:1,fetchImpl:async()=>++count%2?{ok:true,arrayBuffer:async()=>pointerBytes}:{ok:true,arrayBuffer:async()=>Buffer.from('wrong')}}),/timeout/)});
