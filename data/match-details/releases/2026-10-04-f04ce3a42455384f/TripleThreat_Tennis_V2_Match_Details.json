@@ -1,0 +1,1490 @@
+{
+  "ContractVersion": "tennis-match-details-v1",
+  "Sport": "Tennis",
+  "BoardDate": "2026-10-04",
+  "GeneratedAt": "2026-10-05T03:06:50.098047+00:00",
+  "SourcePayloadSHA256": "f04ce3a42455384f46f2799311c6f990f07686c2924ab2d8c3a5ac81e286bea9",
+  "MatchCount": 8,
+  "Matches": [
+    {
+      "MatchID": "CHA_KAR_1004",
+      "BoardDate": "2026-10-04",
+      "MatchDate": "2026-10-04",
+      "MatchTime": "11:00 PM",
+      "Tournament": null,
+      "Surface": "Hard",
+      "Round": null,
+      "PlayerA": "Sonay Kartal",
+      "PlayerB": "Alina Charaeva",
+      "PlayerAMatchup": {
+        "Player": "Sonay Kartal",
+        "Opponent": "Alina Charaeva",
+        "MatchupScore": null,
+        "MatchupScoreVersion": "matchup-score-v0.1",
+        "MatchupScoreStatus": "UNAVAILABLE",
+        "MatchupScoreUnavailableReason": "SurfaceFit:fewer_than_three_prior_surface_matches;ServeVsReturn:fewer_than_three_prior_surface_matches;ReturnVsServe:fewer_than_three_prior_surface_matches;HoldBreak:fewer_than_three_prior_surface_matches;SecondServe:fewer_than_three_prior_surface_matches;BaseControl:fewer_than_three_prior_surface_matches",
+        "MatchupScoreDataQuality": "UNAVAILABLE",
+        "MatchupScorePresentationBand": "UNAVAILABLE",
+        "Components": {
+          "SurfaceFit": {
+            "Score": null,
+            "Raw": null,
+            "Available": "No",
+            "Quality": "Unavailable"
+          },
+          "ServeVsReturn": {
+            "Score": null,
+            "Raw": null,
+            "Available": "No",
+            "Quality": "Unavailable"
+          },
+          "ReturnVsServe": {
+            "Score": null,
+            "Raw": null,
+            "Available": "No",
+            "Quality": "Unavailable"
+          },
+          "HoldBreak": {
+            "Score": null,
+            "Raw": null,
+            "Available": "No",
+            "Quality": "Unavailable"
+          },
+          "SecondServe": {
+            "Score": null,
+            "Raw": null,
+            "Available": "No",
+            "Quality": "Unavailable"
+          },
+          "BaseControl": {
+            "Score": null,
+            "Raw": null,
+            "Available": "No",
+            "Quality": "Unavailable"
+          }
+        }
+      },
+      "PlayerBMatchup": {
+        "Player": "Alina Charaeva",
+        "Opponent": "Sonay Kartal",
+        "MatchupScore": null,
+        "MatchupScoreVersion": "matchup-score-v0.1",
+        "MatchupScoreStatus": "UNAVAILABLE",
+        "MatchupScoreUnavailableReason": "SurfaceFit:fewer_than_three_prior_surface_matches;ServeVsReturn:fewer_than_three_prior_surface_matches;ReturnVsServe:fewer_than_three_prior_surface_matches;HoldBreak:fewer_than_three_prior_surface_matches;SecondServe:fewer_than_three_prior_surface_matches;BaseControl:fewer_than_three_prior_surface_matches",
+        "MatchupScoreDataQuality": "UNAVAILABLE",
+        "MatchupScorePresentationBand": "UNAVAILABLE",
+        "Components": {
+          "SurfaceFit": {
+            "Score": null,
+            "Raw": null,
+            "Available": "No",
+            "Quality": "Unavailable"
+          },
+          "ServeVsReturn": {
+            "Score": null,
+            "Raw": null,
+            "Available": "No",
+            "Quality": "Unavailable"
+          },
+          "ReturnVsServe": {
+            "Score": null,
+            "Raw": null,
+            "Available": "No",
+            "Quality": "Unavailable"
+          },
+          "HoldBreak": {
+            "Score": null,
+            "Raw": null,
+            "Available": "No",
+            "Quality": "Unavailable"
+          },
+          "SecondServe": {
+            "Score": null,
+            "Raw": null,
+            "Available": "No",
+            "Quality": "Unavailable"
+          },
+          "BaseControl": {
+            "Score": null,
+            "Raw": null,
+            "Available": "No",
+            "Quality": "Unavailable"
+          }
+        }
+      },
+      "ModelRead": {
+        "Status": "UNAVAILABLE",
+        "ModelPick": null,
+        "ModelWinProbability": null,
+        "PlayerAModelWinProbability": null,
+        "PlayerBModelWinProbability": null,
+        "NoVigMarketProbability": null,
+        "PlayerANoVigProbability": null,
+        "PlayerBNoVigProbability": null,
+        "Edge": null
+      },
+      "MatchupAdvantages": {
+        "PlayerA": {
+          "Player": "Sonay Kartal",
+          "TPW": null,
+          "Hold": null,
+          "Break": null,
+          "DominanceRatio": null,
+          "SecondServeWon": null,
+          "BreakPointsSaved": null
+        },
+        "PlayerB": {
+          "Player": "Alina Charaeva",
+          "TPW": "0.488",
+          "Hold": "0.712264151",
+          "Break": "0.347031963",
+          "DominanceRatio": "0.95",
+          "SecondServeWon": "0.476947368",
+          "BreakPointsSaved": "0.570422535"
+        }
+      },
+      "MatchupReasoning": {
+        "Surface": null,
+        "ServeVsReturn": null,
+        "ReturnVsServe": null,
+        "ControlPressure": {
+          "TPWDominanceEdge": null,
+          "BreakPointMarketRead": null
+        },
+        "SecondServe": {
+          "PlayerASecondServeWon": null,
+          "PlayerBSecondServeWon": "0.476947368"
+        },
+        "BaseControl": null,
+        "ChaosVolatility": {
+          "ChaosFlag": null,
+          "TreeRiskLabel": null,
+          "AuditFlag": null
+        }
+      },
+      "CounterEvidence": {
+        "Status": "UNAVAILABLE",
+        "Reason": "NO_AUTHORITATIVE_MATCHUP_COUNTER_EVIDENCE_FIELD",
+        "Evidence": []
+      },
+      "ModelConclusion": {
+        "Status": "UNAVAILABLE",
+        "SourceField": null,
+        "Text": null
+      },
+      "SecondaryMarketContext": {
+        "Spread": {
+          "Side": null,
+          "Line": null,
+          "ProjectedMargin": null,
+          "ModelProbability": null,
+          "NoVigProbability": null,
+          "Edge": null
+        },
+        "Total": {
+          "Direction": null,
+          "Line": null,
+          "Projection": null,
+          "ModelProbability": null,
+          "NoVigProbability": null,
+          "Edge": null
+        }
+      }
+    },
+    {
+      "MatchID": "BEN_LI_1005",
+      "BoardDate": "2026-10-04",
+      "MatchDate": "2026-10-05",
+      "MatchTime": "12:00 AM",
+      "Tournament": null,
+      "Surface": "Hard",
+      "Round": null,
+      "PlayerA": "Belinda Bencic",
+      "PlayerB": "Ann Li",
+      "PlayerAMatchup": {
+        "Player": "Belinda Bencic",
+        "Opponent": "Ann Li",
+        "MatchupScore": 62.09677324480905,
+        "MatchupScoreVersion": "matchup-score-v0.1",
+        "MatchupScoreStatus": "SCORED",
+        "MatchupScoreUnavailableReason": null,
+        "MatchupScoreDataQuality": "STABLE",
+        "MatchupScorePresentationBand": "FOREST_GREEN",
+        "Components": {
+          "SurfaceFit": {
+            "Score": 70.78939711474095,
+            "Raw": 0.6469135802469136,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "ServeVsReturn": {
+            "Score": 62.444989545822374,
+            "Raw": 0.6023423778207293,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "ReturnVsServe": {
+            "Score": 55.81133363915509,
+            "Raw": 0.46639252331378844,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "HoldBreak": {
+            "Score": 61.32577758854401,
+            "Raw": 0.5359430500038249,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "SecondServe": {
+            "Score": 54.327365750995234,
+            "Raw": 0.013390403846153809,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "BaseControl": {
+            "Score": 61.16556115747197,
+            "Raw": 0.5355172085611581,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          }
+        }
+      },
+      "PlayerBMatchup": {
+        "Player": "Ann Li",
+        "Opponent": "Belinda Bencic",
+        "MatchupScore": 43.236965290251135,
+        "MatchupScoreVersion": "matchup-score-v0.1",
+        "MatchupScoreStatus": "SCORED",
+        "MatchupScoreUnavailableReason": null,
+        "MatchupScoreDataQuality": "STABLE",
+        "MatchupScorePresentationBand": "RED",
+        "Components": {
+          "SurfaceFit": {
+            "Score": 50.54555702549978,
+            "Raw": 0.5338622535896812,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "ServeVsReturn": {
+            "Score": 44.18866636084491,
+            "Raw": 0.5336074766862116,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "ReturnVsServe": {
+            "Score": 37.555010454177626,
+            "Raw": 0.3976576221792707,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "HoldBreak": {
+            "Score": 38.67422241145601,
+            "Raw": 0.46405694999617514,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "SecondServe": {
+            "Score": 45.67263424900476,
+            "Raw": -0.013390403846153809,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "BaseControl": {
+            "Score": 38.834438842528044,
+            "Raw": 0.4644827914388419,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          }
+        }
+      },
+      "ModelRead": {
+        "Status": "AVAILABLE",
+        "ModelPick": "Belinda Bencic",
+        "ModelWinProbability": 0.5483402345669,
+        "PlayerAModelWinProbability": 0.5483402345669,
+        "PlayerBModelWinProbability": 0.4516597654331,
+        "NoVigMarketProbability": 0.6987539367383268,
+        "PlayerANoVigProbability": 0.6987539367383268,
+        "PlayerBNoVigProbability": 0.3012460632616733,
+        "Edge": -0.15041370217142672
+      },
+      "MatchupAdvantages": {
+        "PlayerA": {
+          "Player": "Belinda Bencic",
+          "TPW": "0.526",
+          "Hold": "0.777227723",
+          "Break": "0.418719212",
+          "DominanceRatio": "1.12",
+          "SecondServeWon": "0.511631579",
+          "BreakPointsSaved": "0.618644068"
+        },
+        "PlayerB": {
+          "Player": "Ann Li",
+          "TPW": "0.511",
+          "Hold": "0.730375427",
+          "Break": "0.321799308",
+          "DominanceRatio": "1.06",
+          "SecondServeWon": "0.485423077",
+          "BreakPointsSaved": "0.588888889"
+        }
+      },
+      "MatchupReasoning": {
+        "Surface": "A Surface Edge",
+        "ServeVsReturn": "Player A Slight/Mixed",
+        "ReturnVsServe": "Player A Strong",
+        "ControlPressure": {
+          "TPWDominanceEdge": "Player A Strong",
+          "BreakPointMarketRead": "BP Pressure Neutral"
+        },
+        "SecondServe": {
+          "PlayerASecondServeWon": "0.511631579",
+          "PlayerBSecondServeWon": "0.485423077"
+        },
+        "BaseControl": "Player A Control Lean",
+        "ChaosVolatility": {
+          "ChaosFlag": "Chaos Flag",
+          "TreeRiskLabel": "High Tree Risk",
+          "AuditFlag": "AUDIT: High tree risk"
+        }
+      },
+      "CounterEvidence": {
+        "Status": "UNAVAILABLE",
+        "Reason": "NO_AUTHORITATIVE_MATCHUP_COUNTER_EVIDENCE_FIELD",
+        "Evidence": []
+      },
+      "ModelConclusion": {
+        "Status": "AVAILABLE",
+        "SourceField": "Season Projection.ML Note",
+        "Text": "Belinda Bencic control lean, confidence capped. Model probability: 54.8%; Pick no-vig probability: 69.9%; ML gap: -15.0%; Confidence: 2.1/10"
+      },
+      "SecondaryMarketContext": {
+        "Spread": {
+          "Side": "Ann Li +3.5",
+          "Line": -3.5,
+          "ProjectedMargin": 1.91,
+          "ModelProbability": 0.5636,
+          "NoVigProbability": 0.4633284853521712,
+          "Edge": 0.1002715146478288
+        },
+        "Total": {
+          "Direction": "No Total Projection",
+          "Line": 21.5,
+          "Projection": null,
+          "ModelProbability": null,
+          "NoVigProbability": null,
+          "Edge": null
+        }
+      }
+    },
+    {
+      "MatchID": "GAU_SUN_1005",
+      "BoardDate": "2026-10-04",
+      "MatchDate": "2026-10-05",
+      "MatchTime": "5:30 AM",
+      "Tournament": null,
+      "Surface": "Hard",
+      "Round": null,
+      "PlayerA": "Coco Gauff",
+      "PlayerB": "Xinran Sun",
+      "PlayerAMatchup": {
+        "Player": "Coco Gauff",
+        "Opponent": "Xinran Sun",
+        "MatchupScore": null,
+        "MatchupScoreVersion": "matchup-score-v0.1",
+        "MatchupScoreStatus": "UNAVAILABLE",
+        "MatchupScoreUnavailableReason": "SurfaceFit:fewer_than_three_prior_surface_matches;ServeVsReturn:fewer_than_three_prior_surface_matches;ReturnVsServe:fewer_than_three_prior_surface_matches;HoldBreak:fewer_than_three_prior_surface_matches;SecondServe:fewer_than_three_prior_surface_matches;BaseControl:fewer_than_three_prior_surface_matches",
+        "MatchupScoreDataQuality": "UNAVAILABLE",
+        "MatchupScorePresentationBand": "UNAVAILABLE",
+        "Components": {
+          "SurfaceFit": {
+            "Score": null,
+            "Raw": null,
+            "Available": "No",
+            "Quality": "Unavailable"
+          },
+          "ServeVsReturn": {
+            "Score": null,
+            "Raw": null,
+            "Available": "No",
+            "Quality": "Unavailable"
+          },
+          "ReturnVsServe": {
+            "Score": null,
+            "Raw": null,
+            "Available": "No",
+            "Quality": "Unavailable"
+          },
+          "HoldBreak": {
+            "Score": null,
+            "Raw": null,
+            "Available": "No",
+            "Quality": "Unavailable"
+          },
+          "SecondServe": {
+            "Score": null,
+            "Raw": null,
+            "Available": "No",
+            "Quality": "Unavailable"
+          },
+          "BaseControl": {
+            "Score": null,
+            "Raw": null,
+            "Available": "No",
+            "Quality": "Unavailable"
+          }
+        }
+      },
+      "PlayerBMatchup": {
+        "Player": "Xinran Sun",
+        "Opponent": "Coco Gauff",
+        "MatchupScore": null,
+        "MatchupScoreVersion": "matchup-score-v0.1",
+        "MatchupScoreStatus": "UNAVAILABLE",
+        "MatchupScoreUnavailableReason": "SurfaceFit:fewer_than_three_prior_surface_matches;ServeVsReturn:fewer_than_three_prior_surface_matches;ReturnVsServe:fewer_than_three_prior_surface_matches;HoldBreak:fewer_than_three_prior_surface_matches;SecondServe:fewer_than_three_prior_surface_matches;BaseControl:fewer_than_three_prior_surface_matches",
+        "MatchupScoreDataQuality": "UNAVAILABLE",
+        "MatchupScorePresentationBand": "UNAVAILABLE",
+        "Components": {
+          "SurfaceFit": {
+            "Score": null,
+            "Raw": null,
+            "Available": "No",
+            "Quality": "Unavailable"
+          },
+          "ServeVsReturn": {
+            "Score": null,
+            "Raw": null,
+            "Available": "No",
+            "Quality": "Unavailable"
+          },
+          "ReturnVsServe": {
+            "Score": null,
+            "Raw": null,
+            "Available": "No",
+            "Quality": "Unavailable"
+          },
+          "HoldBreak": {
+            "Score": null,
+            "Raw": null,
+            "Available": "No",
+            "Quality": "Unavailable"
+          },
+          "SecondServe": {
+            "Score": null,
+            "Raw": null,
+            "Available": "No",
+            "Quality": "Unavailable"
+          },
+          "BaseControl": {
+            "Score": null,
+            "Raw": null,
+            "Available": "No",
+            "Quality": "Unavailable"
+          }
+        }
+      },
+      "ModelRead": {
+        "Status": "UNAVAILABLE",
+        "ModelPick": null,
+        "ModelWinProbability": null,
+        "PlayerAModelWinProbability": null,
+        "PlayerBModelWinProbability": null,
+        "NoVigMarketProbability": null,
+        "PlayerANoVigProbability": null,
+        "PlayerBNoVigProbability": null,
+        "Edge": null
+      },
+      "MatchupAdvantages": {
+        "PlayerA": {
+          "Player": "Coco Gauff",
+          "TPW": "0.531",
+          "Hold": "0.726277372",
+          "Break": "0.342007435",
+          "DominanceRatio": "1.16",
+          "SecondServeWon": "0.454478261",
+          "BreakPointsSaved": "0.563953488"
+        },
+        "PlayerB": {
+          "Player": "Xinran Sun",
+          "TPW": null,
+          "Hold": null,
+          "Break": null,
+          "DominanceRatio": null,
+          "SecondServeWon": null,
+          "BreakPointsSaved": null
+        }
+      },
+      "MatchupReasoning": {
+        "Surface": null,
+        "ServeVsReturn": null,
+        "ReturnVsServe": null,
+        "ControlPressure": {
+          "TPWDominanceEdge": null,
+          "BreakPointMarketRead": null
+        },
+        "SecondServe": {
+          "PlayerASecondServeWon": "0.454478261",
+          "PlayerBSecondServeWon": null
+        },
+        "BaseControl": null,
+        "ChaosVolatility": {
+          "ChaosFlag": null,
+          "TreeRiskLabel": null,
+          "AuditFlag": null
+        }
+      },
+      "CounterEvidence": {
+        "Status": "UNAVAILABLE",
+        "Reason": "NO_AUTHORITATIVE_MATCHUP_COUNTER_EVIDENCE_FIELD",
+        "Evidence": []
+      },
+      "ModelConclusion": {
+        "Status": "UNAVAILABLE",
+        "SourceField": null,
+        "Text": null
+      },
+      "SecondaryMarketContext": {
+        "Spread": {
+          "Side": null,
+          "Line": null,
+          "ProjectedMargin": null,
+          "ModelProbability": null,
+          "NoVigProbability": null,
+          "Edge": null
+        },
+        "Total": {
+          "Direction": null,
+          "Line": null,
+          "Projection": null,
+          "ModelProbability": null,
+          "NoVigProbability": null,
+          "Edge": null
+        }
+      }
+    },
+    {
+      "MatchID": "VEK_SWI_1004",
+      "BoardDate": "2026-10-04",
+      "MatchDate": "2026-10-04",
+      "MatchTime": "8:00 PM",
+      "Tournament": null,
+      "Surface": "Hard",
+      "Round": null,
+      "PlayerA": "Donna Vekic",
+      "PlayerB": "Iga Swiatek",
+      "PlayerAMatchup": {
+        "Player": "Donna Vekic",
+        "Opponent": "Iga Swiatek",
+        "MatchupScore": 37.995892357304186,
+        "MatchupScoreVersion": "matchup-score-v0.1",
+        "MatchupScoreStatus": "SCORED",
+        "MatchupScoreUnavailableReason": null,
+        "MatchupScoreDataQuality": "STABLE",
+        "MatchupScorePresentationBand": "RED",
+        "Components": {
+          "SurfaceFit": {
+            "Score": 36.35077088730439,
+            "Raw": 0.45765333333333336,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "ServeVsReturn": {
+            "Score": 40.173884732147336,
+            "Raw": 0.5183487726187693,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "ReturnVsServe": {
+            "Score": 35.49150241807736,
+            "Raw": 0.3894107379460743,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "HoldBreak": {
+            "Score": 36.437638396872536,
+            "Raw": 0.45661988288334276,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "SecondServe": {
+            "Score": 45.76126820995109,
+            "Raw": -0.01311480272727275,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "BaseControl": {
+            "Score": 37.33349624907159,
+            "Raw": 0.4595056508826926,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          }
+        }
+      },
+      "PlayerBMatchup": {
+        "Player": "Iga Swiatek",
+        "Opponent": "Donna Vekic",
+        "MatchupScore": 61.974400530956714,
+        "MatchupScoreVersion": "matchup-score-v0.1",
+        "MatchupScoreStatus": "SCORED",
+        "MatchupScoreUnavailableReason": null,
+        "MatchupScoreDataQuality": "STABLE",
+        "MatchupScorePresentationBand": "FOREST_GREEN",
+        "Components": {
+          "SurfaceFit": {
+            "Score": 63.5304006657392,
+            "Raw": 0.6036838978015449,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "ServeVsReturn": {
+            "Score": 64.50849758192264,
+            "Raw": 0.6105892620539257,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "ReturnVsServe": {
+            "Score": 59.82611526785267,
+            "Raw": 0.4816512273812307,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "HoldBreak": {
+            "Score": 63.56236160312746,
+            "Raw": 0.5433801171166572,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "SecondServe": {
+            "Score": 54.2387317900489,
+            "Raw": 0.01311480272727275,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "BaseControl": {
+            "Score": 62.66650375092841,
+            "Raw": 0.5404943491173074,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          }
+        }
+      },
+      "ModelRead": {
+        "Status": "AVAILABLE",
+        "ModelPick": "Iga Swiatek",
+        "ModelWinProbability": 0.7,
+        "PlayerAModelWinProbability": 0.3,
+        "PlayerBModelWinProbability": 0.7,
+        "NoVigMarketProbability": 0.8787307370770032,
+        "PlayerANoVigProbability": 0.12126926292299677,
+        "PlayerBNoVigProbability": 0.8787307370770032,
+        "Edge": -0.17873073707700324
+      },
+      "MatchupAdvantages": {
+        "PlayerA": {
+          "Player": "Donna Vekic",
+          "TPW": "0.474",
+          "Hold": "0.707112971",
+          "Break": "0.283950617",
+          "DominanceRatio": "0.88",
+          "SecondServeWon": "0.464045455",
+          "BreakPointsSaved": "0.545454545"
+        },
+        "PlayerB": {
+          "Player": "Iga Swiatek",
+          "TPW": "0.545",
+          "Hold": "0.753731343",
+          "Break": "0.410852713",
+          "DominanceRatio": "1.24",
+          "SecondServeWon": "0.52224",
+          "BreakPointsSaved": "0.634285714"
+        }
+      },
+      "MatchupReasoning": {
+        "Surface": "B Surface Edge",
+        "ServeVsReturn": "Player B Strong",
+        "ReturnVsServe": "Player B Strong",
+        "ControlPressure": {
+          "TPWDominanceEdge": "Player B Strong",
+          "BreakPointMarketRead": "BP Pressure Neutral"
+        },
+        "SecondServe": {
+          "PlayerASecondServeWon": "0.464045455",
+          "PlayerBSecondServeWon": "0.52224"
+        },
+        "BaseControl": "Player B Full Control",
+        "ChaosVolatility": {
+          "ChaosFlag": "Chaos Flag",
+          "TreeRiskLabel": "High Tree Risk",
+          "AuditFlag": "AUDIT: High tree risk"
+        }
+      },
+      "CounterEvidence": {
+        "Status": "UNAVAILABLE",
+        "Reason": "NO_AUTHORITATIVE_MATCHUP_COUNTER_EVIDENCE_FIELD",
+        "Evidence": []
+      },
+      "ModelConclusion": {
+        "Status": "AVAILABLE",
+        "SourceField": "Season Projection.ML Note",
+        "Text": "Iga Swiatek control lean, confidence capped. Model probability: 70.0%; Pick no-vig probability: 87.9%; ML gap: -17.9%; Confidence: 2.4/10"
+      },
+      "SecondaryMarketContext": {
+        "Spread": {
+          "Side": "Donna Vekic +5.5",
+          "Line": -5.5,
+          "ProjectedMargin": 2.69,
+          "ModelProbability": 0.6124,
+          "NoVigProbability": 0.42272260302810855,
+          "Edge": 0.18967739697189148
+        },
+        "Total": {
+          "Direction": "Over",
+          "Line": 18.5,
+          "Projection": 23.1,
+          "ModelProbability": 0.66,
+          "NoVigProbability": 0.4978050921861282,
+          "Edge": 0.16219490781387183
+        }
+      }
+    },
+    {
+      "MatchID": "SAK_SVI_1005",
+      "BoardDate": "2026-10-04",
+      "MatchDate": "2026-10-05",
+      "MatchTime": "1:10 AM",
+      "Tournament": null,
+      "Surface": "Hard",
+      "Round": null,
+      "PlayerA": "Maria Sakkari",
+      "PlayerB": "Elina Svitolina",
+      "PlayerAMatchup": {
+        "Player": "Maria Sakkari",
+        "Opponent": "Elina Svitolina",
+        "MatchupScore": 53.04920540222183,
+        "MatchupScoreVersion": "matchup-score-v0.1",
+        "MatchupScoreStatus": "SCORED",
+        "MatchupScoreUnavailableReason": null,
+        "MatchupScoreDataQuality": "STABLE",
+        "MatchupScorePresentationBand": "YELLOW",
+        "Components": {
+          "SurfaceFit": {
+            "Score": 59.855756973936366,
+            "Raw": 0.583311459556538,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "ServeVsReturn": {
+            "Score": 49.85021990915124,
+            "Raw": 0.5546838145648322,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "ReturnVsServe": {
+            "Score": 55.52733791827804,
+            "Raw": 0.46532648380912445,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "HoldBreak": {
+            "Score": 49.92971316687409,
+            "Raw": 0.4997808089387331,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "SecondServe": {
+            "Score": 51.55673335339175,
+            "Raw": 0.00480658695652178,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "BaseControl": {
+            "Score": 43.646242828815886,
+            "Raw": 0.4800214935286632,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          }
+        }
+      },
+      "PlayerBMatchup": {
+        "Player": "Elina Svitolina",
+        "Opponent": "Maria Sakkari",
+        "MatchupScore": 54.27109021666017,
+        "MatchupScoreVersion": "matchup-score-v0.1",
+        "MatchupScoreStatus": "SCORED",
+        "MatchupScoreUnavailableReason": null,
+        "MatchupScoreDataQuality": "STABLE",
+        "MatchupScorePresentationBand": "YELLOW",
+        "Components": {
+          "SurfaceFit": {
+            "Score": 69.42542550159162,
+            "Raw": 0.6383900128195958,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "ServeVsReturn": {
+            "Score": 44.472662081721964,
+            "Raw": 0.5346735161908756,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "ReturnVsServe": {
+            "Score": 50.14978009084876,
+            "Raw": 0.4453161854351678,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "HoldBreak": {
+            "Score": 50.07028683312592,
+            "Raw": 0.5002191910612669,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "SecondServe": {
+            "Score": 48.44326664660825,
+            "Raw": -0.00480658695652178,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "BaseControl": {
+            "Score": 56.35375717118408,
+            "Raw": 0.5199785064713367,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          }
+        }
+      },
+      "ModelRead": {
+        "Status": "AVAILABLE",
+        "ModelPick": "No Clear Lean",
+        "ModelWinProbability": null,
+        "PlayerAModelWinProbability": 0.4825435101716,
+        "PlayerBModelWinProbability": 0.5174564898284,
+        "NoVigMarketProbability": null,
+        "PlayerANoVigProbability": 0.2575128448392701,
+        "PlayerBNoVigProbability": 0.7424871551607299,
+        "Edge": null
+      },
+      "MatchupAdvantages": {
+        "PlayerA": {
+          "Player": "Maria Sakkari",
+          "TPW": "0.505",
+          "Hold": "0.729613734",
+          "Break": "0.365217391",
+          "DominanceRatio": "1.02",
+          "SecondServeWon": "0.536608696",
+          "BreakPointsSaved": "0.551724138"
+        },
+        "PlayerB": {
+          "Player": "Elina Svitolina",
+          "TPW": "0.525",
+          "Hold": "0.690196078",
+          "Break": "0.405511811",
+          "DominanceRatio": "1.12",
+          "SecondServeWon": "0.451130435",
+          "BreakPointsSaved": "0.608910891"
+        }
+      },
+      "MatchupReasoning": {
+        "Surface": "B Surface Edge",
+        "ServeVsReturn": "Player A Strong",
+        "ReturnVsServe": "Player B Strong",
+        "ControlPressure": {
+          "TPWDominanceEdge": "Player B Strong",
+          "BreakPointMarketRead": "BP Pressure Neutral"
+        },
+        "SecondServe": {
+          "PlayerASecondServeWon": "0.536608696",
+          "PlayerBSecondServeWon": "0.451130435"
+        },
+        "BaseControl": "Player B Control Lean",
+        "ChaosVolatility": {
+          "ChaosFlag": "No Chaos Flag",
+          "TreeRiskLabel": "Low Tree Risk",
+          "AuditFlag": "No major tree audit"
+        }
+      },
+      "CounterEvidence": {
+        "Status": "UNAVAILABLE",
+        "Reason": "NO_AUTHORITATIVE_MATCHUP_COUNTER_EVIDENCE_FIELD",
+        "Evidence": []
+      },
+      "ModelConclusion": {
+        "Status": "AVAILABLE",
+        "SourceField": "Season Projection.ML Note",
+        "Text": "No clear ML lean; neither player owns a strong enough control path."
+      },
+      "SecondaryMarketContext": {
+        "Spread": {
+          "Side": "Maria Sakkari +4.5",
+          "Line": -4.5,
+          "ProjectedMargin": 0.44,
+          "ModelProbability": 0.6624,
+          "NoVigProbability": 0.502289901534234,
+          "Edge": 0.16011009846576596
+        },
+        "Total": {
+          "Direction": "Total Pass / Gap Too Small",
+          "Line": 20.5,
+          "Projection": 22.2,
+          "ModelProbability": 0.5765,
+          "NoVigProbability": 0.5045804323928179,
+          "Edge": 0.07191956760718211
+        }
+      }
+    },
+    {
+      "MatchID": "OST_MER_1005",
+      "BoardDate": "2026-10-04",
+      "MatchDate": "2026-10-05",
+      "MatchTime": "1:30 AM",
+      "Tournament": null,
+      "Surface": "Hard",
+      "Round": null,
+      "PlayerA": "Jelena Ostapenko",
+      "PlayerB": "Elise Mertens",
+      "PlayerAMatchup": {
+        "Player": "Jelena Ostapenko",
+        "Opponent": "Elise Mertens",
+        "MatchupScore": 44.52994478679658,
+        "MatchupScoreVersion": "matchup-score-v0.1",
+        "MatchupScoreStatus": "SCORED",
+        "MatchupScoreUnavailableReason": null,
+        "MatchupScoreDataQuality": "STABLE",
+        "MatchupScorePresentationBand": "RED",
+        "Components": {
+          "SurfaceFit": {
+            "Score": 48.03620835768624,
+            "Raw": 0.5207134502923977,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "ServeVsReturn": {
+            "Score": 36.746743206575594,
+            "Raw": 0.5049283972126608,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "ReturnVsServe": {
+            "Score": 40.543135290918215,
+            "Raw": 0.4092922223008445,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "HoldBreak": {
+            "Score": 42.04664084577572,
+            "Raw": 0.4749848644554408,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "SecondServe": {
+            "Score": 51.270288769297466,
+            "Raw": 0.003921733766233754,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "BaseControl": {
+            "Score": 56.28891994080152,
+            "Raw": 0.5197724432668172,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          }
+        }
+      },
+      "PlayerBMatchup": {
+        "Player": "Elise Mertens",
+        "Opponent": "Jelena Ostapenko",
+        "MatchupScore": 55.379508700644145,
+        "MatchupScoreVersion": "matchup-score-v0.1",
+        "MatchupScoreStatus": "SCORED",
+        "MatchupScoreUnavailableReason": null,
+        "MatchupScoreDataQuality": "STABLE",
+        "MatchupScorePresentationBand": "GREEN",
+        "Components": {
+          "SurfaceFit": {
+            "Score": 51.60160559207664,
+            "Raw": 0.539396352631998,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "ServeVsReturn": {
+            "Score": 59.45686470908178,
+            "Raw": 0.5907077776991555,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "ReturnVsServe": {
+            "Score": 63.253256793424406,
+            "Raw": 0.4950716027873392,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "HoldBreak": {
+            "Score": 57.95335915422426,
+            "Raw": 0.5250151355445591,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "SecondServe": {
+            "Score": 48.72971123070253,
+            "Raw": -0.003921733766233754,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "BaseControl": {
+            "Score": 43.71108005919851,
+            "Raw": 0.4802275567331829,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          }
+        }
+      },
+      "ModelRead": {
+        "Status": "AVAILABLE",
+        "ModelPick": "Elise Mertens",
+        "ModelWinProbability": 0.5948797128578,
+        "PlayerAModelWinProbability": 0.4051202871422,
+        "PlayerBModelWinProbability": 0.5948797128578,
+        "NoVigMarketProbability": 0.6314864248974542,
+        "PlayerANoVigProbability": 0.36851357510254573,
+        "PlayerBNoVigProbability": 0.6314864248974542,
+        "Edge": -0.03660671203965426
+      },
+      "MatchupAdvantages": {
+        "PlayerA": {
+          "Player": "Jelena Ostapenko",
+          "TPW": "0.49",
+          "Hold": "0.611111111",
+          "Break": "0.338912134",
+          "DominanceRatio": "0.95",
+          "SecondServeWon": "0.389454545",
+          "BreakPointsSaved": "0.543147208"
+        },
+        "PlayerB": {
+          "Player": "Elise Mertens",
+          "TPW": "0.519",
+          "Hold": "0.67281106",
+          "Break": "0.377272727",
+          "DominanceRatio": "1.11",
+          "SecondServeWon": "0.46052381",
+          "BreakPointsSaved": "0.516778523"
+        }
+      },
+      "MatchupReasoning": {
+        "Surface": "B Surface Edge",
+        "ServeVsReturn": "Player B Strong",
+        "ReturnVsServe": "Player B Strong",
+        "ControlPressure": {
+          "TPWDominanceEdge": "Player B Strong",
+          "BreakPointMarketRead": "Both Sides BP Live"
+        },
+        "SecondServe": {
+          "PlayerASecondServeWon": "0.389454545",
+          "PlayerBSecondServeWon": "0.46052381"
+        },
+        "BaseControl": "Player B Full Control",
+        "ChaosVolatility": {
+          "ChaosFlag": "Chaos Flag",
+          "TreeRiskLabel": "High Tree Risk",
+          "AuditFlag": "AUDIT: High tree risk"
+        }
+      },
+      "CounterEvidence": {
+        "Status": "UNAVAILABLE",
+        "Reason": "NO_AUTHORITATIVE_MATCHUP_COUNTER_EVIDENCE_FIELD",
+        "Evidence": []
+      },
+      "ModelConclusion": {
+        "Status": "AVAILABLE",
+        "SourceField": "Season Projection.ML Note",
+        "Text": "Elise Mertens control lean, confidence capped. Model probability: 59.5%; Pick no-vig probability: 63.1%; ML gap: -3.7%; Confidence: 3.7/10"
+      },
+      "SecondaryMarketContext": {
+        "Spread": {
+          "Side": "Jelena Ostapenko +3.0",
+          "Line": -3.0,
+          "ProjectedMargin": 0.91,
+          "ModelProbability": 0.5836,
+          "NoVigProbability": 0.502289901534234,
+          "Edge": 0.08131009846576598
+        },
+        "Total": {
+          "Direction": "Total Pass / Gap Too Small",
+          "Line": 22.0,
+          "Projection": 21.2,
+          "ModelProbability": 0.536,
+          "NoVigProbability": 0.5170826375411833,
+          "Edge": 0.018917362458816627
+        }
+      }
+    },
+    {
+      "MatchID": "JOV_RAK_1004",
+      "BoardDate": "2026-10-04",
+      "MatchDate": "2026-10-04",
+      "MatchTime": "9:00 PM",
+      "Tournament": null,
+      "Surface": "Hard",
+      "Round": null,
+      "PlayerA": "Iva Jovic",
+      "PlayerB": "Kamilla Rakhimova",
+      "PlayerAMatchup": {
+        "Player": "Iva Jovic",
+        "Opponent": "Kamilla Rakhimova",
+        "MatchupScore": 51.547092957967756,
+        "MatchupScoreVersion": "matchup-score-v0.1",
+        "MatchupScoreStatus": "SCORED",
+        "MatchupScoreUnavailableReason": null,
+        "MatchupScoreDataQuality": "STABLE",
+        "MatchupScorePresentationBand": "YELLOW",
+        "Components": {
+          "SurfaceFit": {
+            "Score": 57.436695523234896,
+            "Raw": 0.5702474526928676,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "ServeVsReturn": {
+            "Score": 45.75102373961914,
+            "Raw": 0.5394564003638076,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "ReturnVsServe": {
+            "Score": 57.49796806966628,
+            "Raw": 0.47275561791322296,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "HoldBreak": {
+            "Score": 47.40113853588279,
+            "Raw": 0.49188808732615374,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "SecondServe": {
+            "Score": 47.066819615477115,
+            "Raw": -0.009064000000000044,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "BaseControl": {
+            "Score": 47.21267973371815,
+            "Raw": 0.4912739927810307,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          }
+        }
+      },
+      "PlayerBMatchup": {
+        "Player": "Kamilla Rakhimova",
+        "Opponent": "Iva Jovic",
+        "MatchupScore": 48.23313925752465,
+        "MatchupScoreVersion": "matchup-score-v0.1",
+        "MatchupScoreStatus": "SCORED",
+        "MatchupScoreUnavailableReason": null,
+        "MatchupScoreDataQuality": "STABLE",
+        "MatchupScorePresentationBand": "YELLOW",
+        "Components": {
+          "SurfaceFit": {
+            "Score": 41.68423333873472,
+            "Raw": 0.4870401493930906,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "ServeVsReturn": {
+            "Score": 42.50203193033372,
+            "Raw": 0.527244382086777,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "ReturnVsServe": {
+            "Score": 54.24897626038085,
+            "Raw": 0.4605435996361924,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "HoldBreak": {
+            "Score": 52.59886146411722,
+            "Raw": 0.5081119126738463,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "SecondServe": {
+            "Score": 52.93318038452288,
+            "Raw": 0.009064000000000044,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "BaseControl": {
+            "Score": 52.78732026628185,
+            "Raw": 0.5087260072189693,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          }
+        }
+      },
+      "ModelRead": {
+        "Status": "AVAILABLE",
+        "ModelPick": "Iva Jovic",
+        "ModelWinProbability": 0.581955234826,
+        "PlayerAModelWinProbability": 0.581955234826,
+        "PlayerBModelWinProbability": 0.418044765174,
+        "NoVigMarketProbability": 0.7890884654465373,
+        "PlayerANoVigProbability": 0.7890884654465373,
+        "PlayerBNoVigProbability": 0.21091153455346262,
+        "Edge": -0.20713323062053737
+      },
+      "MatchupAdvantages": {
+        "PlayerA": {
+          "Player": "Iva Jovic",
+          "TPW": "0.524",
+          "Hold": "0.705627706",
+          "Break": "0.328888889",
+          "DominanceRatio": "1.12",
+          "SecondServeWon": "0.484272727",
+          "BreakPointsSaved": "0.584795322"
+        },
+        "PlayerB": {
+          "Player": "Kamilla Rakhimova",
+          "TPW": "0.489",
+          "Hold": "0.649546828",
+          "Break": "0.417417417",
+          "DominanceRatio": "0.95",
+          "SecondServeWon": "0.45503125",
+          "BreakPointsSaved": "0.527131783"
+        }
+      },
+      "MatchupReasoning": {
+        "Surface": "A Surface Edge",
+        "ServeVsReturn": "Player A Strong",
+        "ReturnVsServe": "Player B Slight/Mixed",
+        "ControlPressure": {
+          "TPWDominanceEdge": "Player A Strong",
+          "BreakPointMarketRead": "BP Pressure Neutral"
+        },
+        "SecondServe": {
+          "PlayerASecondServeWon": "0.484272727",
+          "PlayerBSecondServeWon": "0.45503125"
+        },
+        "BaseControl": "Split Control: A Serve / B Return",
+        "ChaosVolatility": {
+          "ChaosFlag": "Chaos Flag",
+          "TreeRiskLabel": "High Tree Risk",
+          "AuditFlag": "AUDIT: High tree risk"
+        }
+      },
+      "CounterEvidence": {
+        "Status": "UNAVAILABLE",
+        "Reason": "NO_AUTHORITATIVE_MATCHUP_COUNTER_EVIDENCE_FIELD",
+        "Evidence": []
+      },
+      "ModelConclusion": {
+        "Status": "AVAILABLE",
+        "SourceField": "Season Projection.ML Note",
+        "Text": "Iva Jovic control lean, confidence capped. Model probability: 58.2%; Pick no-vig probability: 78.9%; ML gap: -20.7%; Confidence: 0.6/10"
+      },
+      "SecondaryMarketContext": {
+        "Spread": {
+          "Side": "Kamilla Rakhimova +5.0",
+          "Line": -5.0,
+          "ProjectedMargin": 0.23,
+          "ModelProbability": 0.6908,
+          "NoVigProbability": 0.502289901534234,
+          "Edge": 0.18851009846576597
+        },
+        "Total": {
+          "Direction": "Total Pass / Gap Too Small",
+          "Line": 20.0,
+          "Projection": 21.3,
+          "ModelProbability": 0.5585,
+          "NoVigProbability": 0.5045804323928179,
+          "Edge": 0.05391956760718212
+        }
+      }
+    },
+    {
+      "MatchID": "BOU_ZHE_1004",
+      "BoardDate": "2026-10-04",
+      "MatchDate": "2026-10-04",
+      "MatchTime": "9:10 PM",
+      "Tournament": null,
+      "Surface": "Hard",
+      "Round": null,
+      "PlayerA": "Marie Bouzkova",
+      "PlayerB": "Qinwen Zheng",
+      "PlayerAMatchup": {
+        "Player": "Marie Bouzkova",
+        "Opponent": "Qinwen Zheng",
+        "MatchupScore": 38.880072571315274,
+        "MatchupScoreVersion": "matchup-score-v0.1",
+        "MatchupScoreStatus": "SCORED",
+        "MatchupScoreUnavailableReason": null,
+        "MatchupScoreDataQuality": "STABLE",
+        "MatchupScorePresentationBand": "RED",
+        "Components": {
+          "SurfaceFit": {
+            "Score": 34.972050320468334,
+            "Raw": 0.4497840799226555,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "ServeVsReturn": {
+            "Score": 41.111366238165715,
+            "Raw": 0.5219487676929077,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "ReturnVsServe": {
+            "Score": 36.30085751563311,
+            "Raw": 0.39266911518965153,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "HoldBreak": {
+            "Score": 35.431964496356414,
+            "Raw": 0.45321400003516055,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "SecondServe": {
+            "Score": 46.63681857872437,
+            "Raw": -0.01039653787878786,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "BaseControl": {
+            "Score": 46.76138708112526,
+            "Raw": 0.4898574837485938,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          }
+        }
+      },
+      "PlayerBMatchup": {
+        "Player": "Qinwen Zheng",
+        "Opponent": "Marie Bouzkova",
+        "MatchupScore": 60.01334681328492,
+        "MatchupScoreVersion": "matchup-score-v0.1",
+        "MatchupScoreStatus": "SCORED",
+        "MatchupScoreUnavailableReason": null,
+        "MatchupScoreDataQuality": "STABLE",
+        "MatchupScorePresentationBand": "FOREST_GREEN",
+        "Components": {
+          "SurfaceFit": {
+            "Score": 60.60162721793243,
+            "Raw": 0.587388888888889,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "ServeVsReturn": {
+            "Score": 63.69914248436688,
+            "Raw": 0.6073308848103485,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "ReturnVsServe": {
+            "Score": 58.888633761834285,
+            "Raw": 0.47805123230709234,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "HoldBreak": {
+            "Score": 64.56803550364359,
+            "Raw": 0.5467859999648395,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "SecondServe": {
+            "Score": 53.363181421275634,
+            "Raw": 0.01039653787878786,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "BaseControl": {
+            "Score": 53.23861291887476,
+            "Raw": 0.5101425162514063,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          }
+        }
+      },
+      "ModelRead": {
+        "Status": "AVAILABLE",
+        "ModelPick": "Qinwen Zheng",
+        "ModelWinProbability": 0.5825131755152,
+        "PlayerAModelWinProbability": 0.4174868244848,
+        "PlayerBModelWinProbability": 0.5825131755152,
+        "NoVigMarketProbability": 0.5733276913854508,
+        "PlayerANoVigProbability": 0.4266723086145492,
+        "PlayerBNoVigProbability": 0.5733276913854508,
+        "Edge": 0.009185484129749174
+      },
+      "MatchupAdvantages": {
+        "PlayerA": {
+          "Player": "Marie Bouzkova",
+          "TPW": "0.511",
+          "Hold": "0.625",
+          "Break": "0.3125",
+          "DominanceRatio": "1.05",
+          "SecondServeWon": "0.43547619",
+          "BreakPointsSaved": "0.59375"
+        },
+        "PlayerB": {
+          "Player": "Qinwen Zheng",
+          "TPW": "0.518",
+          "Hold": "0.789915966",
+          "Break": "0.334728033",
+          "DominanceRatio": "1.1",
+          "SecondServeWon": "0.493727273",
+          "BreakPointsSaved": "0.668874172"
+        }
+      },
+      "MatchupReasoning": {
+        "Surface": "B Surface Edge",
+        "ServeVsReturn": "Player B Strong",
+        "ReturnVsServe": "Player B Slight/Mixed",
+        "ControlPressure": {
+          "TPWDominanceEdge": "Player B Strong",
+          "BreakPointMarketRead": "BP Pressure Neutral"
+        },
+        "SecondServe": {
+          "PlayerASecondServeWon": "0.43547619",
+          "PlayerBSecondServeWon": "0.493727273"
+        },
+        "BaseControl": "Player B Control Lean",
+        "ChaosVolatility": {
+          "ChaosFlag": "Chaos Flag",
+          "TreeRiskLabel": "High Tree Risk",
+          "AuditFlag": "AUDIT: High tree risk"
+        }
+      },
+      "CounterEvidence": {
+        "Status": "UNAVAILABLE",
+        "Reason": "NO_AUTHORITATIVE_MATCHUP_COUNTER_EVIDENCE_FIELD",
+        "Evidence": []
+      },
+      "ModelConclusion": {
+        "Status": "AVAILABLE",
+        "SourceField": "Season Projection.ML Note",
+        "Text": "Qinwen Zheng control lean, confidence capped. Model probability: 58.3%; Pick no-vig probability: 57.3%; ML gap: +0.9%; Confidence: 4.1/10"
+      },
+      "SecondaryMarketContext": {
+        "Spread": {
+          "Side": "Qinwen Zheng -2.0",
+          "Line": -2.0,
+          "ProjectedMargin": 2.62,
+          "ModelProbability": 0.5248,
+          "NoVigProbability": 0.5,
+          "Edge": 0.0248
+        },
+        "Total": {
+          "Direction": "Total Pass / Gap Too Small",
+          "Line": 22.0,
+          "Projection": 22.4,
+          "ModelProbability": 0.518,
+          "NoVigProbability": 0.5,
+          "Edge": 0.018
+        }
+      }
+    }
+  ]
+}
