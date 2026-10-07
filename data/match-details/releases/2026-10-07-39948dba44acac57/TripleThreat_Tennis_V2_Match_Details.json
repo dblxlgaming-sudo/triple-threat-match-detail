@@ -1,0 +1,941 @@
+{
+  "ContractVersion": "tennis-match-details-v1",
+  "Sport": "Tennis",
+  "SlateID": "TT-2026-10-07-A",
+  "BoardDate": "2026-10-07",
+  "GeneratedAt": "2026-10-07T19:36:10.786387+00:00",
+  "SourcePayloadSHA256": "39948dba44acac575727f02dd882fd843cb0a0b7a01dc98c9dc3b85c9532d171",
+  "MatchCount": 5,
+  "Matches": [
+    {
+      "SlateID": "TT-2026-10-07-A",
+      "MatchID": "MUC_BAR_1008",
+      "BoardDate": "2026-10-07",
+      "MatchDate": "2026-10-08",
+      "MatchTime": "12:00 AM",
+      "Tournament": "WTA Wuhan",
+      "Surface": "Hard",
+      "Round": null,
+      "PlayerA": "Karolina Muchova",
+      "PlayerB": "Nikola Bartunkova",
+      "PlayerAMatchup": {
+        "Player": "Karolina Muchova",
+        "Opponent": "Nikola Bartunkova",
+        "MatchupScore": 59.65407688728755,
+        "MatchupScoreVersion": "matchup-score-v0.1",
+        "MatchupScoreStatus": "SCORED",
+        "MatchupScoreUnavailableReason": null,
+        "MatchupScoreDataQuality": "STABLE",
+        "MatchupScorePresentationBand": "GREEN",
+        "Components": {
+          "SurfaceFit": {
+            "Score": 74.67368641952578,
+            "Raw": 0.6725925925925926,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "ServeVsReturn": {
+            "Score": 64.09987110004715,
+            "Raw": 0.6089401351678965,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "ReturnVsServe": {
+            "Score": 49.4296600197398,
+            "Raw": 0.4426477258319995,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "HoldBreak": {
+            "Score": 57.38466480458425,
+            "Raw": 0.5231989013830565,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "SecondServe": {
+            "Score": 47.64360592411542,
+            "Raw": -0.007278668563300117,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "BaseControl": {
+            "Score": 49.07688745349537,
+            "Raw": 0.49711276447227737,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          }
+        }
+      },
+      "PlayerBMatchup": {
+        "Player": "Nikola Bartunkova",
+        "Opponent": "Karolina Muchova",
+        "MatchupScore": 47.91702818915159,
+        "MatchupScoreVersion": "matchup-score-v0.1",
+        "MatchupScoreStatus": "SCORED",
+        "MatchupScoreUnavailableReason": null,
+        "MatchupScoreDataQuality": "STABLE",
+        "MatchupScorePresentationBand": "YELLOW",
+        "Components": {
+          "SurfaceFit": {
+            "Score": 55.610733886230726,
+            "Raw": 0.5605166732568868,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "ServeVsReturn": {
+            "Score": 50.5703399802602,
+            "Raw": 0.5573522741680005,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "ReturnVsServe": {
+            "Score": 35.90012889995285,
+            "Raw": 0.39105986483210353,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "HoldBreak": {
+            "Score": 42.615335195415796,
+            "Raw": 0.47680109861694364,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "SecondServe": {
+            "Score": 52.35639407588459,
+            "Raw": 0.007278668563300117,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "BaseControl": {
+            "Score": 50.92311254650463,
+            "Raw": 0.5028872355277226,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          }
+        }
+      },
+      "ModelRead": {
+        "Status": "AVAILABLE",
+        "ModelPick": "Karolina Muchova",
+        "ModelWinProbability": 0.5641982925543,
+        "PlayerAModelWinProbability": 0.5641982925543,
+        "PlayerBModelWinProbability": 0.4358017074457,
+        "NoVigMarketProbability": 0.6900422669635958,
+        "PlayerANoVigProbability": 0.6900422669635958,
+        "PlayerBNoVigProbability": 0.3099577330364041,
+        "Edge": -0.12584397440929587
+      },
+      "MatchupAdvantages": {
+        "PlayerA": {
+          "Player": "Karolina Muchova",
+          "TPW": "0.522",
+          "Hold": "0.790243902",
+          "Break": "0.349514563",
+          "DominanceRatio": "1.14",
+          "SecondServeWon": "0.512238095",
+          "BreakPointsSaved": "0.57"
+        },
+        "PlayerB": {
+          "Player": "Nikola Bartunkova",
+          "TPW": "0.504",
+          "Hold": "0.716",
+          "Break": "0.3722334",
+          "DominanceRatio": "1.02",
+          "SecondServeWon": "0.504386364",
+          "BreakPointsSaved": "0.559006211"
+        }
+      },
+      "MatchupReasoning": {
+        "Surface": "A Surface Edge",
+        "ServeVsReturn": "Player A Strong",
+        "ReturnVsServe": "Player B Slight/Mixed",
+        "ControlPressure": {
+          "TPWDominanceEdge": "Player A Strong",
+          "BreakPointMarketRead": "BP Pressure Neutral"
+        },
+        "SecondServe": {
+          "PlayerASecondServeWon": "0.512238095",
+          "PlayerBSecondServeWon": "0.504386364"
+        },
+        "BaseControl": "Split Control: A Serve / B Return",
+        "ChaosVolatility": {
+          "ChaosFlag": "No Chaos Flag",
+          "TreeRiskLabel": "Moderate Tree Risk",
+          "AuditFlag": "AUDIT: Low tree confidence"
+        }
+      },
+      "CounterEvidence": {
+        "Status": "UNAVAILABLE",
+        "Reason": "NO_AUTHORITATIVE_MATCHUP_COUNTER_EVIDENCE_FIELD",
+        "Evidence": []
+      },
+      "ModelConclusion": {
+        "Status": "AVAILABLE",
+        "SourceField": "Season Projection.ML Note",
+        "Text": "Karolina Muchova control lean, confidence capped. Model probability: 56.4%; Pick no-vig probability: 69.0%; ML gap: -12.6%; Confidence: 3.3/10"
+      },
+      "SecondaryMarketContext": {
+        "Spread": {
+          "Side": "Nikola Bartunkova +3.5",
+          "Line": -3.5,
+          "ProjectedMargin": 0.57,
+          "ModelProbability": 0.6172,
+          "NoVigProbability": 0.4740160904544466,
+          "Edge": 0.14318390954555338
+        },
+        "Total": {
+          "Direction": "Total Pass / Gap Too Small",
+          "Line": 21.5,
+          "Projection": 21.3,
+          "ModelProbability": 0.509,
+          "NoVigProbability": 0.502289901534234,
+          "Edge": 0.006710098465765972
+        }
+      }
+    },
+    {
+      "SlateID": "TT-2026-10-07-A",
+      "MatchID": "ALE_AND_1008",
+      "BoardDate": "2026-10-07",
+      "MatchDate": "2026-10-08",
+      "MatchTime": "4:00 AM",
+      "Tournament": "WTA Wuhan",
+      "Surface": "Hard",
+      "Round": null,
+      "PlayerA": "Ekaterina Alexandrova",
+      "PlayerB": "Mirra Andreeva",
+      "PlayerAMatchup": {
+        "Player": "Ekaterina Alexandrova",
+        "Opponent": "Mirra Andreeva",
+        "MatchupScore": 45.82935295121304,
+        "MatchupScoreVersion": "matchup-score-v0.1",
+        "MatchupScoreStatus": "SCORED",
+        "MatchupScoreUnavailableReason": null,
+        "MatchupScoreDataQuality": "STABLE",
+        "MatchupScorePresentationBand": "YELLOW",
+        "Components": {
+          "SurfaceFit": {
+            "Score": 51.170996357370356,
+            "Raw": 0.5371391705069124,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "ServeVsReturn": {
+            "Score": 37.261640698444644,
+            "Raw": 0.5069745782018041,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "ReturnVsServe": {
+            "Score": 46.303063137656814,
+            "Raw": 0.43103733485363116,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "HoldBreak": {
+            "Score": 40.76156556836016,
+            "Raw": 0.47085501514655886,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "SecondServe": {
+            "Score": 54.90631043832865,
+            "Raw": 0.015192770000000022,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "BaseControl": {
+            "Score": 47.1879721556327,
+            "Raw": 0.4911964802062539,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          }
+        }
+      },
+      "PlayerBMatchup": {
+        "Player": "Mirra Andreeva",
+        "Opponent": "Ekaterina Alexandrova",
+        "MatchupScore": 58.434481062227206,
+        "MatchupScoreVersion": "matchup-score-v0.1",
+        "MatchupScoreStatus": "SCORED",
+        "MatchupScoreUnavailableReason": null,
+        "MatchupScoreDataQuality": "STABLE",
+        "MatchupScorePresentationBand": "GREEN",
+        "Components": {
+          "SurfaceFit": {
+            "Score": 65.88433969639063,
+            "Raw": 0.6171848739495798,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "ServeVsReturn": {
+            "Score": 53.69693686234319,
+            "Raw": 0.5689626651463688,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "ReturnVsServe": {
+            "Score": 62.738359301555356,
+            "Raw": 0.49302542179819586,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "HoldBreak": {
+            "Score": 59.23843443163982,
+            "Raw": 0.5291449848534411,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "SecondServe": {
+            "Score": 45.09368956167135,
+            "Raw": -0.015192770000000022,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "BaseControl": {
+            "Score": 52.81202784436728,
+            "Raw": 0.508803519793746,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          }
+        }
+      },
+      "ModelRead": {
+        "Status": "AVAILABLE",
+        "ModelPick": "Mirra Andreeva",
+        "ModelWinProbability": 0.5813885859057,
+        "PlayerAModelWinProbability": 0.4186114140943,
+        "PlayerBModelWinProbability": 0.5813885859057,
+        "NoVigMarketProbability": 0.7546285969217043,
+        "PlayerANoVigProbability": 0.24537140307829577,
+        "PlayerBNoVigProbability": 0.7546285969217043,
+        "Edge": -0.17324001101600423
+      },
+      "MatchupAdvantages": {
+        "PlayerA": {
+          "Player": "Ekaterina Alexandrova",
+          "TPW": "0.511",
+          "Hold": "0.72243346",
+          "Break": "0.314393939",
+          "DominanceRatio": "1.05",
+          "SecondServeWon": "0.477545455",
+          "BreakPointsSaved": "0.645631068"
+        },
+        "PlayerB": {
+          "Player": "Mirra Andreeva",
+          "TPW": "0.533",
+          "Hold": "0.710144928",
+          "Break": "0.443262411",
+          "DominanceRatio": "1.17",
+          "SecondServeWon": "0.47468",
+          "BreakPointsSaved": "0.633187773"
+        }
+      },
+      "MatchupReasoning": {
+        "Surface": "B Surface Edge",
+        "ServeVsReturn": "Neutral",
+        "ReturnVsServe": "Player B Strong",
+        "ControlPressure": {
+          "TPWDominanceEdge": "Player B Strong",
+          "BreakPointMarketRead": "BP Pressure Neutral"
+        },
+        "SecondServe": {
+          "PlayerASecondServeWon": "0.477545455",
+          "PlayerBSecondServeWon": "0.47468"
+        },
+        "BaseControl": "Player B Control Lean",
+        "ChaosVolatility": {
+          "ChaosFlag": "Chaos Flag",
+          "TreeRiskLabel": "High Tree Risk",
+          "AuditFlag": "AUDIT: High tree risk"
+        }
+      },
+      "CounterEvidence": {
+        "Status": "UNAVAILABLE",
+        "Reason": "NO_AUTHORITATIVE_MATCHUP_COUNTER_EVIDENCE_FIELD",
+        "Evidence": []
+      },
+      "ModelConclusion": {
+        "Status": "AVAILABLE",
+        "SourceField": "Season Projection.ML Note",
+        "Text": "Mirra Andreeva control lean, confidence capped. Model probability: 58.1%; Pick no-vig probability: 75.5%; ML gap: -17.3%; Confidence: 1.8/10"
+      },
+      "SecondaryMarketContext": {
+        "Spread": {
+          "Side": "Ekaterina Alexandrova +4.5",
+          "Line": -4.5,
+          "ProjectedMargin": 1.48,
+          "ModelProbability": 0.6208,
+          "NoVigProbability": 0.513566680233347,
+          "Edge": 0.1072333197666531
+        },
+        "Total": {
+          "Direction": "Total Pass / Gap Too Small",
+          "Line": 20.5,
+          "Projection": 22.2,
+          "ModelProbability": 0.5765,
+          "NoVigProbability": 0.5,
+          "Edge": 0.0765
+        }
+      }
+    },
+    {
+      "SlateID": "TT-2026-10-07-A",
+      "MatchID": "BAI_JON_1007A",
+      "BoardDate": "2026-10-07",
+      "MatchDate": "2026-10-07",
+      "MatchTime": "7:00 PM",
+      "Tournament": "WTA Suzhou",
+      "Surface": "Hard",
+      "Round": null,
+      "PlayerA": "Zhuoxuan Bai",
+      "PlayerB": "Emerson Jones",
+      "PlayerAMatchup": {
+        "Player": "Zhuoxuan Bai",
+        "Opponent": "Emerson Jones",
+        "MatchupScore": 55.01775802567766,
+        "MatchupScoreVersion": "matchup-score-v0.1",
+        "MatchupScoreStatus": "SCORED",
+        "MatchupScoreUnavailableReason": null,
+        "MatchupScoreDataQuality": "STABLE",
+        "MatchupScorePresentationBand": "GREEN",
+        "Components": {
+          "SurfaceFit": {
+            "Score": 50.64295412875574,
+            "Raw": 0.5343724696356276,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "ServeVsReturn": {
+            "Score": 47.66259994893169,
+            "Raw": 0.5465713903231615,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "ReturnVsServe": {
+            "Score": 61.340549311615725,
+            "Raw": 0.4875266501666188,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "HoldBreak": {
+            "Score": 52.719202259293816,
+            "Raw": 0.5084882624568989,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "SecondServe": {
+            "Score": 62.10603138153514,
+            "Raw": 0.038123617647058905,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "BaseControl": {
+            "Score": 64.37906164331655,
+            "Raw": 0.5462736132774668,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          }
+        }
+      },
+      "PlayerBMatchup": {
+        "Player": "Emerson Jones",
+        "Opponent": "Zhuoxuan Bai",
+        "MatchupScore": 43.108612443410806,
+        "MatchupScoreVersion": "matchup-score-v0.1",
+        "MatchupScoreStatus": "SCORED",
+        "MatchupScoreUnavailableReason": null,
+        "MatchupScoreDataQuality": "STABLE",
+        "MatchupScorePresentationBand": "RED",
+        "Components": {
+          "SurfaceFit": {
+            "Score": 41.862527747598136,
+            "Raw": 0.488,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "ServeVsReturn": {
+            "Score": 38.65945068838427,
+            "Raw": 0.5124733498333812,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "ReturnVsServe": {
+            "Score": 52.337400051068315,
+            "Raw": 0.4534286096768385,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "HoldBreak": {
+            "Score": 47.28079774070618,
+            "Raw": 0.49151173754310107,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "SecondServe": {
+            "Score": 37.89396861846487,
+            "Raw": -0.038123617647058905,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "BaseControl": {
+            "Score": 35.62093835668344,
+            "Raw": 0.4537263867225332,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          }
+        }
+      },
+      "ModelRead": {
+        "Status": "AVAILABLE",
+        "ModelPick": "Zhuoxuan Bai",
+        "ModelWinProbability": 0.5612879652366,
+        "PlayerAModelWinProbability": 0.5612879652366,
+        "PlayerBModelWinProbability": 0.4387120347634,
+        "NoVigMarketProbability": null,
+        "PlayerANoVigProbability": null,
+        "PlayerBNoVigProbability": null,
+        "Edge": null
+      },
+      "MatchupAdvantages": {
+        "PlayerA": {
+          "Player": "Zhuoxuan Bai",
+          "TPW": "0.49",
+          "Hold": "0.645833333",
+          "Break": "0.409090909",
+          "DominanceRatio": "0.97",
+          "SecondServeWon": "0.514",
+          "BreakPointsSaved": "0.571428571"
+        },
+        "PlayerB": {
+          "Player": "Emerson Jones",
+          "TPW": "0.493",
+          "Hold": "0.592592593",
+          "Break": "0.419354839",
+          "DominanceRatio": "0.97",
+          "SecondServeWon": "0.4419375",
+          "BreakPointsSaved": "0.50955414"
+        }
+      },
+      "MatchupReasoning": {
+        "Surface": "A Surface Edge",
+        "ServeVsReturn": "Player A Strong",
+        "ReturnVsServe": "Player B Strong",
+        "ControlPressure": {
+          "TPWDominanceEdge": "Player B Slight/Mixed",
+          "BreakPointMarketRead": "BP Pressure Neutral"
+        },
+        "SecondServe": {
+          "PlayerASecondServeWon": "0.514",
+          "PlayerBSecondServeWon": "0.4419375"
+        },
+        "BaseControl": "Player B Control Lean",
+        "ChaosVolatility": {
+          "ChaosFlag": "Chaos Flag",
+          "TreeRiskLabel": "High Tree Risk",
+          "AuditFlag": "AUDIT: High tree risk"
+        }
+      },
+      "CounterEvidence": {
+        "Status": "UNAVAILABLE",
+        "Reason": "NO_AUTHORITATIVE_MATCHUP_COUNTER_EVIDENCE_FIELD",
+        "Evidence": []
+      },
+      "ModelConclusion": {
+        "Status": "AVAILABLE",
+        "SourceField": "Season Projection.ML Note",
+        "Text": "ML needs review."
+      },
+      "SecondaryMarketContext": {
+        "Spread": {
+          "Side": "Spread Pass / No Usable Margin",
+          "Line": null,
+          "ProjectedMargin": 0.19,
+          "ModelProbability": null,
+          "NoVigProbability": null,
+          "Edge": null
+        },
+        "Total": {
+          "Direction": "Total Pass / Gap Too Small",
+          "Line": 21.5,
+          "Projection": 21.7,
+          "ModelProbability": 0.509,
+          "NoVigProbability": 0.5,
+          "Edge": 0.009
+        }
+      }
+    },
+    {
+      "SlateID": "TT-2026-10-07-A",
+      "MatchID": "KAL_KOR_1007",
+      "BoardDate": "2026-10-07",
+      "MatchDate": "2026-10-07",
+      "MatchTime": "7:00 PM",
+      "Tournament": "WTA Suzhou",
+      "Surface": "Hard",
+      "Round": null,
+      "PlayerA": "Elvina Kalieva",
+      "PlayerB": "Tamara Korpatsch",
+      "PlayerAMatchup": {
+        "Player": "Elvina Kalieva",
+        "Opponent": "Tamara Korpatsch",
+        "MatchupScore": 54.36936865734454,
+        "MatchupScoreVersion": "matchup-score-v0.1",
+        "MatchupScoreStatus": "SCORED",
+        "MatchupScoreUnavailableReason": null,
+        "MatchupScoreDataQuality": "STABLE",
+        "MatchupScorePresentationBand": "YELLOW",
+        "Components": {
+          "SurfaceFit": {
+            "Score": 53.93317308041001,
+            "Raw": 0.5516483516483517,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "ServeVsReturn": {
+            "Score": 50.23139981749722,
+            "Raw": 0.5560962640396976,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "ReturnVsServe": {
+            "Score": 59.540988728833035,
+            "Raw": 0.4805535298999265,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "HoldBreak": {
+            "Score": 50.75001487041405,
+            "Raw": 0.5023391120598225,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "SecondServe": {
+            "Score": 60.41004356474017,
+            "Raw": 0.03260851666666667,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "BaseControl": {
+            "Score": 52.78091090939859,
+            "Raw": 0.5087059004960176,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          }
+        }
+      },
+      "PlayerBMatchup": {
+        "Player": "Tamara Korpatsch",
+        "Opponent": "Elvina Kalieva",
+        "MatchupScore": 43.15531000725468,
+        "MatchupScoreVersion": "matchup-score-v0.1",
+        "MatchupScoreStatus": "SCORED",
+        "MatchupScoreUnavailableReason": null,
+        "MatchupScoreDataQuality": "STABLE",
+        "MatchupScorePresentationBand": "RED",
+        "Components": {
+          "SurfaceFit": {
+            "Score": 36.165541577986865,
+            "Raw": 0.45660387143616543,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "ServeVsReturn": {
+            "Score": 40.45901127116696,
+            "Raw": 0.5194464701000735,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "ReturnVsServe": {
+            "Score": 49.76860018250277,
+            "Raw": 0.4439037359603024,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "HoldBreak": {
+            "Score": 49.24998512958594,
+            "Raw": 0.49766088794017743,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "SecondServe": {
+            "Score": 39.589956435259836,
+            "Raw": -0.03260851666666667,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "BaseControl": {
+            "Score": 47.21908909060141,
+            "Raw": 0.4912940995039824,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          }
+        }
+      },
+      "ModelRead": {
+        "Status": "AVAILABLE",
+        "ModelPick": "No Clear Lean",
+        "ModelWinProbability": null,
+        "PlayerAModelWinProbability": 0.4939685513577,
+        "PlayerBModelWinProbability": 0.5060314486423,
+        "NoVigMarketProbability": null,
+        "PlayerANoVigProbability": null,
+        "PlayerBNoVigProbability": null,
+        "Edge": null
+      },
+      "MatchupAdvantages": {
+        "PlayerA": {
+          "Player": "Elvina Kalieva",
+          "TPW": "0.503",
+          "Hold": "0.650224215",
+          "Break": "0.334782609",
+          "DominanceRatio": "1.02",
+          "SecondServeWon": "0.464285714",
+          "BreakPointsSaved": "0.59375"
+        },
+        "PlayerB": {
+          "Player": "Tamara Korpatsch",
+          "TPW": "0.499",
+          "Hold": "0.651315789",
+          "Break": "0.342281879",
+          "DominanceRatio": "0.99",
+          "SecondServeWon": "0.448266667",
+          "BreakPointsSaved": "0.56557377"
+        }
+      },
+      "MatchupReasoning": {
+        "Surface": "Neutral Surface",
+        "ServeVsReturn": "Player A Slight/Mixed",
+        "ReturnVsServe": "Player A Slight/Mixed",
+        "ControlPressure": {
+          "TPWDominanceEdge": "Player A Strong",
+          "BreakPointMarketRead": "BP Pressure Neutral"
+        },
+        "SecondServe": {
+          "PlayerASecondServeWon": "0.464285714",
+          "PlayerBSecondServeWon": "0.448266667"
+        },
+        "BaseControl": "Player A Control Lean",
+        "ChaosVolatility": {
+          "ChaosFlag": "Chaos Flag",
+          "TreeRiskLabel": "High Tree Risk",
+          "AuditFlag": "AUDIT: High tree risk"
+        }
+      },
+      "CounterEvidence": {
+        "Status": "UNAVAILABLE",
+        "Reason": "NO_AUTHORITATIVE_MATCHUP_COUNTER_EVIDENCE_FIELD",
+        "Evidence": []
+      },
+      "ModelConclusion": {
+        "Status": "AVAILABLE",
+        "SourceField": "Season Projection.ML Note",
+        "Text": "No clear ML lean; neither player owns a strong enough control path."
+      },
+      "SecondaryMarketContext": {
+        "Spread": {
+          "Side": "Spread Pass / No Usable Margin",
+          "Line": null,
+          "ProjectedMargin": -0.04,
+          "ModelProbability": null,
+          "NoVigProbability": null,
+          "Edge": null
+        },
+        "Total": {
+          "Direction": "Total Pass / Gap Too Small",
+          "Line": 21.5,
+          "Projection": 21.6,
+          "ModelProbability": 0.5045,
+          "NoVigProbability": 0.5,
+          "Edge": 0.0045
+        }
+      }
+    },
+    {
+      "SlateID": "TT-2026-10-07-A",
+      "MatchID": "BOL_ANDR_1008",
+      "BoardDate": "2026-10-07",
+      "MatchDate": "2026-10-08",
+      "MatchTime": "4:30 AM",
+      "Tournament": "WTA Suzhou",
+      "Surface": "Hard",
+      "Round": null,
+      "PlayerA": "Mariam Bolkvadze",
+      "PlayerB": "Bianca Vanessa Andreescu",
+      "PlayerAMatchup": {
+        "Player": "Mariam Bolkvadze",
+        "Opponent": "Bianca Vanessa Andreescu",
+        "MatchupScore": 54.00189732001349,
+        "MatchupScoreVersion": "matchup-score-v0.1",
+        "MatchupScoreStatus": "SCORED",
+        "MatchupScoreUnavailableReason": null,
+        "MatchupScoreDataQuality": "STABLE",
+        "MatchupScorePresentationBand": "YELLOW",
+        "Components": {
+          "SurfaceFit": {
+            "Score": 48.69875113476234,
+            "Raw": 0.5241874527588813,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "ServeVsReturn": {
+            "Score": 52.54335154461865,
+            "Raw": 0.5646712118820375,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "ReturnVsServe": {
+            "Score": 72.8741067816744,
+            "Raw": 0.5363083692053856,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "HoldBreak": {
+            "Score": 58.58723543309836,
+            "Raw": 0.5270475263172748,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "SecondServe": {
+            "Score": 27.315419268901863,
+            "Raw": -0.07552000000000006,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "BaseControl": {
+            "Score": 52.24090629209354,
+            "Raw": 0.5070128240345162,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          }
+        }
+      },
+      "PlayerBMatchup": {
+        "Player": "Bianca Vanessa Andreescu",
+        "Opponent": "Mariam Bolkvadze",
+        "MatchupScore": 43.99012665758928,
+        "MatchupScoreVersion": "matchup-score-v0.1",
+        "MatchupScoreStatus": "SCORED",
+        "MatchupScoreUnavailableReason": null,
+        "MatchupScoreDataQuality": "STABLE",
+        "MatchupScorePresentationBand": "RED",
+        "Components": {
+          "SurfaceFit": {
+            "Score": 43.269344775648726,
+            "Raw": 0.4955357142857143,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "ServeVsReturn": {
+            "Score": 27.125893218325604,
+            "Raw": 0.4636916307946144,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "ReturnVsServe": {
+            "Score": 47.45664845538134,
+            "Raw": 0.4353287881179625,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "HoldBreak": {
+            "Score": 41.41276456690164,
+            "Raw": 0.4729524736827252,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "SecondServe": {
+            "Score": 72.68458073109814,
+            "Raw": 0.07552000000000006,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          },
+          "BaseControl": {
+            "Score": 47.75909370790648,
+            "Raw": 0.49298717596548386,
+            "Available": "Yes",
+            "Quality": "Stable Sample"
+          }
+        }
+      },
+      "ModelRead": {
+        "Status": "AVAILABLE",
+        "ModelPick": "Mariam Bolkvadze",
+        "ModelWinProbability": 0.5775374866957,
+        "PlayerAModelWinProbability": 0.5775374866957,
+        "PlayerBModelWinProbability": 0.4224625133043,
+        "NoVigMarketProbability": null,
+        "PlayerANoVigProbability": null,
+        "PlayerBNoVigProbability": null,
+        "Edge": null
+      },
+      "MatchupAdvantages": {
+        "PlayerA": {
+          "Player": "Mariam Bolkvadze",
+          "TPW": "0.523",
+          "Hold": "0.6",
+          "Break": "0.511111111",
+          "DominanceRatio": "1.1",
+          "SecondServeWon": "0.396",
+          "BreakPointsSaved": "0.557692308"
+        },
+        "PlayerB": {
+          "Player": "Bianca Vanessa Andreescu",
+          "TPW": "0.461",
+          "Hold": "0.710144928",
+          "Break": "0.28358209",
+          "DominanceRatio": "0.84",
+          "SecondServeWon": "0.488181818",
+          "BreakPointsSaved": "0.529411765"
+        }
+      },
+      "MatchupReasoning": {
+        "Surface": "A Surface Edge",
+        "ServeVsReturn": "Player B Strong",
+        "ReturnVsServe": "Player A Strong",
+        "ControlPressure": {
+          "TPWDominanceEdge": "Player A Strong",
+          "BreakPointMarketRead": "BP Pressure Neutral"
+        },
+        "SecondServe": {
+          "PlayerASecondServeWon": "0.396",
+          "PlayerBSecondServeWon": "0.488181818"
+        },
+        "BaseControl": "Player A Control Lean",
+        "ChaosVolatility": {
+          "ChaosFlag": "Chaos Flag",
+          "TreeRiskLabel": "High Tree Risk",
+          "AuditFlag": "AUDIT: High tree risk"
+        }
+      },
+      "CounterEvidence": {
+        "Status": "UNAVAILABLE",
+        "Reason": "NO_AUTHORITATIVE_MATCHUP_COUNTER_EVIDENCE_FIELD",
+        "Evidence": []
+      },
+      "ModelConclusion": {
+        "Status": "AVAILABLE",
+        "SourceField": "Season Projection.ML Note",
+        "Text": "ML needs review."
+      },
+      "SecondaryMarketContext": {
+        "Spread": {
+          "Side": "Spread Pass / No Usable Margin",
+          "Line": null,
+          "ProjectedMargin": 1.0,
+          "ModelProbability": null,
+          "NoVigProbability": null,
+          "Edge": null
+        },
+        "Total": {
+          "Direction": "Over",
+          "Line": 19.5,
+          "Projection": 24.0,
+          "ModelProbability": 0.66,
+          "NoVigProbability": 0.5177956371986223,
+          "Edge": 0.14220436280137772
+        }
+      }
+    }
+  ]
+}
