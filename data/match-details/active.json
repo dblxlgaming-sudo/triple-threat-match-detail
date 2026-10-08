@@ -1,10 +1,10 @@
 {
   "ContractVersion": "tennis-match-details-v1",
   "Sport": "Tennis",
-  "SlateID": "TT-2026-10-07-A",
-  "BoardDate": "2026-10-07",
-  "Release": "2026-10-07-fbe36d4138ebcff0",
-  "Artifact": "./releases/2026-10-07-fbe36d4138ebcff0/TripleThreat_Tennis_V2_Match_Details.json",
-  "SHA256": "9722f96e1868d36cda0e147a3ed59b74be6368521772c62d2eb5e04c86d0ad0d",
-  "GeneratedAt": "2026-10-07T19:41:56.245229+00:00"
+  "SlateID": "TT-2026-10-8-A",
+  "BoardDate": "2026-10-08",
+  "Release": "2026-10-08-1154b24731f550dd",
+  "Artifact": "./releases/2026-10-08-1154b24731f550dd/TripleThreat_Tennis_V2_Match_Details.json",
+  "SHA256": "b2cfb0dadc45c446947bf95e6fcd1c04cc5eb49466656ee25fbb7d452d0d8b0b",
+  "GeneratedAt": "2026-10-08T18:58:42.508028+00:00"
 }
