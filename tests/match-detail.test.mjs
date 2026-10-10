@@ -1,5 +1,5 @@
 import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';
-import {ACTIVE_URL,COMPONENTS,componentRows,conclusionText,counterState,operationalBoardDate,researchUrls,scoreTier,sha256Hex,validateArtifact,validatePointer} from '../app.js';
+import {ACTIVE_URL,COMPONENTS,componentRows,conclusionText,counterDisplay,counterState,operationalBoardDate,researchUrls,scoreTier,sha256Hex,validateArtifact,validatePointer} from '../app.js';
 const source=fs.readFileSync(new URL('../app.js',import.meta.url),'utf8'),html=fs.readFileSync(new URL('../index.html',import.meta.url),'utf8'),css=fs.readFileSync(new URL('../styles.css',import.meta.url),'utf8');
 const side=(player,opponent,value=75)=>({Player:player,Opponent:opponent,MatchupScore:value,MatchupScoreStatus:'SCORED',MatchupScorePresentationBand:'PURPLE',Components:Object.fromEntries(COMPONENTS.map(([,key],index)=>[key,{Score:50+index}]))});
 const match={MatchID:'A_B_1001',BoardDate:'2026-10-01',PlayerA:'A',PlayerB:'B',PlayerAMatchup:side('A','B'),PlayerBMatchup:side('B','A',64),CounterEvidence:{Status:'UNAVAILABLE',Reason:'NO_AUTHORITATIVE_MATCHUP_COUNTER_EVIDENCE_FIELD',Evidence:[]},ModelConclusion:{Status:'AVAILABLE',SourceField:'Season Projection.ML Note',Text:'Authoritative note'}};
@@ -15,12 +15,15 @@ test('there is no Google Sheet request',()=>assert.doesNotMatch(source,/docs\.go
 test('canonical player orientation validates',()=>assert.equal(validateArtifact(artifact,pointer).Matches[0].PlayerA,'A'));
 test('both Matchup Scores remain distinct',()=>assert.deepEqual([match.PlayerAMatchup.MatchupScore,match.PlayerBMatchup.MatchupScore],[75,64]));
 test('all six authoritative components map',()=>assert.deepEqual(componentRows(match).map(row=>row.label),COMPONENTS.map(row=>row[0])));
+test('component evidence preserves equal supplied values without normalization',()=>{const rows=componentRows(match);assert.equal(rows[0].advantage,'Even');assert.deepEqual([rows[0].a,rows[0].b],[50,50])});
 test('Model Read remains separate from Matchup Score',()=>{assert.match(html,/Model Read/);assert.match(html,/Matchup Score/)});
 test('authoritative reasoning fields are mapped',()=>assert.match(source,/MatchupReasoning/));
 test('Counter Evidence unavailable reason is preserved',()=>assert.deepEqual(counterState(match),{available:false,reason:'NO_AUTHORITATIVE_MATCHUP_COUNTER_EVIDENCE_FIELD'}));
+test('missing Counter Evidence is not invented',()=>assert.deepEqual(counterDisplay(match),{available:false,title:'Counter evidence unavailable',items:[],reason:'NO_AUTHORITATIVE_MATCHUP_COUNTER_EVIDENCE_FIELD'}));
 test('Model Conclusion uses Season Projection ML Note',()=>assert.equal(conclusionText(match),'Authoritative note'));
 test('null unavailable score is accepted',()=>{const copy=structuredClone(artifact);copy.Matches[0].PlayerAMatchup.MatchupScore=null;copy.Matches[0].PlayerAMatchup.MatchupScoreStatus='UNAVAILABLE';assert.doesNotThrow(()=>validateArtifact(copy,pointer))});
 test('research links remain present',()=>{assert.match(researchUrls('A').profile,/tennis-player-profile/);assert.match(researchUrls('A').charts,/player_stat_charts/)});
 test('purple presentation uses supplied band without thresholds',()=>{assert.equal(scoreTier(match.PlayerAMatchup),'purple');assert.match(css,/data-tier="purple/)});
 test('desktop and mobile styles avoid horizontal overflow',()=>{assert.match(css,/@media\(max-width:720px\)/);assert.doesNotMatch(css,/overflow-x:\s*auto/)});
 test('operational date can be explicitly requested for fixture smoke',()=>assert.equal(operationalBoardDate({search:'?boardDate=2026-10-01'},new Date()),'2026-10-01'));
+test('Tennis-only distributable contains no WNBA runtime or fixture references',()=>{assert.doesNotMatch(source,/WNBA|wnba/i);assert.doesNotMatch(html,/WNBA|wnba/i);assert.doesNotMatch(css,/WNBA|wnba/i)});

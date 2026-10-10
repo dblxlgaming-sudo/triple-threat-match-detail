@@ -11,7 +11,7 @@
 <body>
   <main class="app">
     <header class="page-head">
-      <div><span class="kicker">Triple Threat Research</span><h1>Match Details</h1></div>
+      <div class="title-lockup"><span class="sport-mark" aria-hidden="true">TT</span><div><span class="kicker">Tennis Research</span><h1>Tennis Match Details</h1></div></div>
       <p>Cross-examine today’s matchup and the model evidence behind it.</p>
     </header>
     <div class="toolbar">
@@ -31,7 +31,7 @@
       <div class="layout">
         <article class="card score-card"><h2 class="section-title">Matchup Score</h2><p class="section-help">Player-relative matchup favorability from the upstream model. Scores do not need to total 100.</p><div class="score-grid" id="scores"></div></article>
         <article class="card read-card"><h2 class="section-title">Model Read</h2><p class="section-help">Model opinion and market context remain separate.</p><div class="read-grid" id="model-read"></div></article>
-        <article class="card full"><h2 class="section-title">Matchup Advantages</h2><p class="section-help">The six authoritative Matchup Score components. Values are displayed exactly as supplied and are not normalized against each other.</p><div class="comparison" id="comparison"></div></article>
+        <article class="card full"><h2 class="section-title">Matchup Evidence</h2><p class="section-help">The six authoritative Matchup Score components with the supplied values, matchup advantage, and available source context. Nothing is normalized or reconstructed.</p><div class="evidence-table" id="comparison"></div></article>
         <article class="card full secondary"><h2 class="section-title">Comparative Factual Support</h2><p class="section-help">Supporting player statistics; these do not replace the Matchup Score components.</p><div class="comparison" id="factual-support"></div></article>
         <article class="card evidence-card"><h2 class="section-title">Why the Model Sees It This Way</h2><div class="evidence-list" id="evidence"></div></article>
         <article class="card"><h2 class="section-title">Counter Evidence</h2><div id="counter-evidence"></div></article>

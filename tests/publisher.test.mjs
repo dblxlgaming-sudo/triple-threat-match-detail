@@ -9,7 +9,7 @@ test('invalid pointer',()=>assert.throws(()=>validateCandidate(Buffer.from('{'),
 test('invalid artifact',()=>assert.throws(()=>validateCandidate(pointerBytes,Buffer.from('{')),/artifact JSON/));
 test('SHA mismatch',()=>assert.throws(()=>validateCandidate(Buffer.from(JSON.stringify({...pointer,SHA256:'f'.repeat(64)})),bytes),/SHA-256 mismatch/));
 test('ContractVersion mismatch',()=>assert.throws(()=>validatePointer({...pointer,ContractVersion:'v0'}),/ContractVersion/));
-test('Sport mismatch',()=>assert.throws(()=>validatePointer({...pointer,Sport:'WNBA'}),/Sport/));
+test('Sport mismatch',()=>assert.throws(()=>validatePointer({...pointer,Sport:'Basketball'}),/Sport/));
 test('duplicate MatchID',()=>assert.throws(()=>validateArtifact({...artifact,MatchCount:2,Matches:[match,structuredClone(match)]},pointer),/Duplicate/));
 test('duplicate player-side identity',()=>{const copy=structuredClone(artifact);copy.Matches[0].PlayerB='A';assert.throws(()=>validateArtifact(copy,pointer),/Duplicate player-side/)});
 test('invalid probability',()=>{const copy=structuredClone(artifact);copy.Matches[0].ModelRead.ModelWinProbability=1.2;assert.throws(()=>validateArtifact(copy,pointer),/ModelWinProbability/)});
