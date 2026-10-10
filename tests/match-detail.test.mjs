@@ -10,6 +10,7 @@ test('immutable release path is required',()=>assert.equal(validatePointer(point
 test('frontend can verify immutable release SHA-256',async()=>assert.equal(await sha256Hex(new TextEncoder().encode('abc')),'ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad'));
 test('BoardDate equality passes',()=>assert.equal(validatePointer(pointer,'2026-10-01').BoardDate,'2026-10-01'));
 test('stale BoardDate is rejected',()=>assert.throws(()=>validatePointer(pointer,'2026-10-03'),/NO_CURRENT_DATA/));
+test('expected stale BoardDate is not logged as a browser error',()=>assert.match(source,/if\(!stale\)console\.error\(error\)/));
 test('there is no yesterday fallback',()=>assert.doesNotMatch(source,/yesterday|setDate\s*\(/i));
 test('there is no Google Sheet request',()=>assert.doesNotMatch(source,/docs\.google|spreadsheet|output=csv|Glide/i));
 test('canonical player orientation validates',()=>assert.equal(validateArtifact(artifact,pointer).Matches[0].PlayerA,'A'));
