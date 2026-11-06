@@ -2,44 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Matchup-specific Triple Threat tennis research.">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Triple Threat Tennis Match Details</title>
   <link rel="icon" href="data:,">
-  <title>Triple Threat Match Details</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="comparison-periods.css">
 </head>
 <body>
-  <main class="app">
-    <header class="page-head">
-      <div class="title-lockup"><span class="sport-mark" aria-hidden="true">TT</span><div><span class="kicker">Tennis Research</span><h1>Tennis Match Details</h1></div></div>
-      <p>Cross-examine today’s matchup and the model evidence behind it.</p>
-    </header>
-    <div class="toolbar">
-      <label class="field" for="match"><span>Current matchup</span><select id="match" disabled><option>Loading matches…</option></select></label>
-      <button id="refresh" type="button">Refresh</button>
-    </div>
-    <p class="status" id="status" aria-live="polite">Connecting to the current matchup feed…</p>
-    <section id="view" hidden>
-      <header class="hero">
-        <div class="players">
-          <article class="player"><span class="role">Player A</span><h2 class="name player-a" id="a-name"></h2><div class="form" id="a-form" aria-label="Player A recent form"></div><nav class="research-links" id="a-links"></nav></article>
-          <span class="versus">VS</span>
-          <article class="player right"><span class="role">Player B</span><h2 class="name player-b" id="b-name"></h2><div class="form" id="b-form" aria-label="Player B recent form"></div><nav class="research-links" id="b-links"></nav></article>
-        </div>
-        <p class="meta" id="meta"></p>
-      </header>
-      <div class="layout">
-        <article class="card score-card"><h2 class="section-title">Matchup Score</h2><p class="section-help">Player-relative matchup favorability from the upstream model. Scores do not need to total 100.</p><div class="score-grid" id="scores"></div></article>
-        <article class="card read-card"><h2 class="section-title">Model Read</h2><p class="section-help">Model opinion and market context remain separate.</p><div class="read-grid" id="model-read"></div></article>
-        <article class="card full"><h2 class="section-title">Matchup Evidence</h2><p class="section-help">The six authoritative Matchup Score components with the supplied values, matchup advantage, and available source context. Nothing is normalized or reconstructed.</p><div class="evidence-table" id="comparison"></div></article>
-        <article class="card full secondary"><h2 class="section-title">Comparative Factual Support</h2><p class="section-help">Supporting player statistics; these do not replace the Matchup Score components.</p><div class="comparison" id="factual-support"></div></article>
-        <article class="card evidence-card"><h2 class="section-title">Why the Model Sees It This Way</h2><div class="evidence-list" id="evidence"></div></article>
-        <article class="card"><h2 class="section-title">Counter Evidence</h2><div id="counter-evidence"></div></article>
-        <article class="card"><h2 class="section-title">Model Conclusion</h2><div id="model-conclusion"></div></article>
-        <article class="card full secondary"><h2 class="section-title">Market Context</h2><p class="section-help">Workbook direction and captured prices for context only. Betting qualification belongs to Line Lab.</p><div class="market-grid" id="market-context"></div></article>
-      </div>
+<main class="app">
+  <header class="page-title"><span aria-hidden="true">🎾</span><h1>Match Details</h1></header>
+  <div class="toolbar"><label><span>Match</span><select id="match" disabled><option>Loading matchups…</option></select></label><button id="refresh" type="button">Refresh</button></div>
+  <p class="status" id="status" role="status">Loading Tennis Match Details…</p>
+  <section id="view" hidden>
+    <article class="match-card neon-card">
+      <div class="player player-a"><div class="portrait" aria-hidden="true">A</div><div><h2 id="a-name"></h2><p id="a-rank"></p><div class="form-line"><b>Last 5:</b><span id="a-form"></span></div><p id="a-record"></p></div><strong class="rest" id="a-rest"></strong></div>
+      <div class="versus">VS</div>
+      <div class="player player-b"><div class="portrait" aria-hidden="true">B</div><div><h2 id="b-name"></h2><p id="b-rank"></p><div class="form-line"><b>Last 5:</b><span id="b-form"></span></div><p id="b-record"></p></div><strong class="rest" id="b-rest"></strong></div>
+      <div class="match-meta" id="meta"></div>
+    </article>
+    <section class="performance neon-card">
+      <div class="section-heading"><h2><span aria-hidden="true">▥</span> Performance Comparison</h2><div class="period-toggle" aria-label="Comparison periods"><button id="season-toggle" type="button" aria-pressed="true">S</button><button id="last5-toggle" type="button" aria-pressed="true">L5</button></div></div>
+      <div id="comparison-sections"></div>
     </section>
-  </main>
-  <script type="module" src="app.js"></script>
+    <section class="scoring-map neon-card">
+      <div class="section-heading map-title"><h2><span aria-hidden="true">▥</span> Matchup Scoring Map <small>Historical Hit Rates (Recent Results)</small></h2></div>
+      <div class="map-controls"><div class="map-tabs" id="map-tabs"></div><label class="match-count">Matches: <output id="history-count">10</output><input id="history-slider" type="range" min="5" max="15" value="10"><span>15</span></label><span class="sample-label" id="sample-label">Last 10</span></div>
+      <div class="map-scroll"><div id="scoring-grid" class="scoring-grid"></div></div>
+    </section>
+    <details class="model-analysis neon-card"><summary><span class="model-icon" aria-hidden="true">◇</span><span><b>Model Analysis</b><small>Model opinion, matchup score, and summary. No betting recommendation.</small></span></summary><div id="model-content" class="model-content"></div></details>
+  </section>
+</main>
+<script type="module" src="app.js"></script>
 </body>
 </html>

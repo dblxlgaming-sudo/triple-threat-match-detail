@@ -1,0 +1,4 @@
+.period-values{display:flex;justify-content:center;gap:18px}.period-values>span{display:grid;min-width:70px}.period-values small{color:var(--muted);font-size:9px;text-transform:uppercase}
+@media(max-width:720px){.period-values{gap:8px}.period-values>span{min-width:58px}}
+.basketball-app .player h2{font-size:26px;white-space:nowrap}
+.score-cell.map-good{color:#fff;background:linear-gradient(180deg,#00df45,#05b934);border-color:#00ef5d}.score-cell.map-close{color:#fff;background:linear-gradient(180deg,#ffe525,#e8bd00);border-color:#fff04a}.score-cell.map-bad{color:#fff;background:linear-gradient(180deg,#ff5158,#e52f3b);border-color:#ff6a70}.basketball-app .map-note{display:none}
